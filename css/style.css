@@ -25,19 +25,39 @@ main{
 
 .icon{
     font-family: "Font awesome 5 Free";
+    font-weight: 800;
 }
 .d-none{
     display: none;
 }
 
 
+/* text colors */
+
+.c-black{
+    color: black;
+}
+.c-white{
+    color: white;
+}
+
+.icons-sidebar{
+    height: 30px;
+    width: auto;
+}
+
+/* bgc */
+
+.bgc-black{
+    background-color: #000000;
+}
 /* sidebar */
 
 .sidebar{
     display: flex;
     flex-direction: column;
     width: 10%;
-    background-color: blue;
+    background-color: #000000;
     order: -1;
     height: calc(100vh - 80px);
 }
@@ -47,15 +67,42 @@ main{
     flex-direction: column;
     display: flex;
     align-items: center;
-    margin: 0 auto;  
+    justify-content: space-between;
+    margin: 10px auto;
+    height: 100%;
+}
+.logo-small{
+    margin: 0 auto;
+    height: 30px;
+    width: auto;
+    margin-bottom: 20px;
+
+
 }
 
-/* .sidebar-menu a{
-    disp
-} */
+.bottom-sidebar-icons{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+.icon-sidebar{
+    font-size: 20px;
+    color: white;
+}
+
+.sidebar-menu .icon{
+    font-size: 24px;
+}
 
 .sidebar-menu ul{
     list-style: none;
+}
+.sidebar-menu ul li{
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* header main  */
