@@ -31,6 +31,9 @@ main{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* text colors */
 
@@ -61,6 +64,7 @@ main{
     flex-direction: column;
     width: 10%;
     background-color: #000000;
+    border: 1px solid black;
     order: -1;
     height: calc(100vh - 80px);
 }
@@ -114,25 +118,80 @@ main{
 .circle .icons-sidebar{
     height: 20px;
 }
-/* header main  */
 
-.header-main{
-    flex-basis: 80px;;
-    background-color: red;
-    height: 100px;
-}
+
+
+/*  main  */
+/* main structure */
 
 .main-section{
     height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    background-color: rgba(20,25,34,255);
     width: 90%;
 }
 .main-content{
-    background-color: coral;
+
 }
 
+/* header structure */
+.header-main{
+    flex-basis: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+
+.btn-header{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+/* main nav */
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.nav-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-nav{
+    margin-bottom: 20px;
+}
+.main-nav ul{
+    list-style: none;
+}
+.main-nav li{
+    display: inline-flex;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.main-content h1{
+    font-size: 22px;
+    color: white;
+}
+
+
+
+
+/* footer */
 
 .footer-player{
     height: 80px;
