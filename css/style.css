@@ -186,12 +186,26 @@ a{
 .main-content h1{
     font-size: 22px;
     color: white;
+    margin-bottom: 20px;
+}
+
+.card-container{
+    height: 100px;
+    flex-basis: 49%;
+    background-color: rosybrown;
+    border: seagreen 2px solid;
+    margin-bottom: 20px;
 }
 
 
-
-
 /* footer */
+
+.card{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 
 .footer-player{
     height: 80px;
