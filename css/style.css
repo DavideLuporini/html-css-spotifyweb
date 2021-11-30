@@ -11,3 +11,52 @@
     content: '';
     display: table;
 }
+
+/* utilities */
+
+
+.full-p-container{
+    height: calc(100vh - 80px);
+}
+
+main{
+    display: flex;
+}
+.header-main{
+    flex-basis: 80px;;
+    background-color: red;
+    height: 100px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: blue;
+    order: -1;
+    height: calc(100vh - 80px);
+}
+
+.sidebar-menu{
+    width: 80px;
+
+}
+
+.main-section{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    width: 80%;
+}
+.main-content{
+    background-color: coral;
+}
+
+
+.footer-player{
+    height: 80px;
+    align-content: flex-end;
+    height: 80px;
+    background-color: yellow;
+}
