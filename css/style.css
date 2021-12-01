@@ -15,10 +15,9 @@
 
 /* utilities */
 
+.d-flex{
+    display: flex;
 
-
-main{
-    
 }
 
 .icon{
@@ -235,7 +234,14 @@ main{
 .player-console{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    
 }
+
+.console-play{
+    justify-content: space-around
+}
+
 
 
 
