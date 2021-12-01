@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 11px;
 }
 
 .clearfix{
@@ -15,10 +14,6 @@
 
 /* utilities */
 
-.d-flex{
-    display: flex;
-
-}
 
 .icon{
     font-family: "Font awesome 5 Free";
@@ -36,8 +31,17 @@ a{
     height: 25px;
     width: 25px;
     border: 2px solid white;
-    padding: 5px;
+    padding: 4px 6px;
     border-radius: 50%;
+}
+
+/* flex proprieties */
+.d-flex{
+    display: flex;
+    
+}
+.f-d-column{
+    flex-direction: column;
 }
 
 /* text colors */
@@ -48,10 +52,21 @@ a{
 .c-white{
     color: white;
 }
+.c-darkgray{
+    color: darkgray;
+}
 
 .icons-sidebar{
     height: 24px;
     width: auto;
+}
+
+/* width */
+.w-30{
+    width: 30%;
+}
+.w-25{
+    width: 25%;
 }
 
 /* bgc */
@@ -63,8 +78,18 @@ a{
     background-color: gray;
 }
 
+/* font size */
+
 .f-s-14px{
     font-size: 14px;
+}
+.f-s-12px{
+    font-size: 12px;
+}
+
+/* font weight */
+.f-w-bold{
+    font-weight: bold;
 }
 
 /* Structure */
@@ -164,10 +189,11 @@ main{
 
 .btn-header{
     color: white;
-    margin-right: 50px;
+    margin-right: 10px;
     border: 2px solid white;
     padding: 10px 30px;
     border-radius: 25px;
+    font-size: 12px
 }
 
 /* main nav */
@@ -182,6 +208,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 14px;
 }
 
 .main-nav{
@@ -219,6 +246,7 @@ main{
 footer{
     font-size: 20px;
     color: white;
+    font-size: 10px;
 }
 .card{
     display: inline-flex;
@@ -233,13 +261,10 @@ footer{
     align-content: flex-end;
     background-color: rgba(40,40,40,255);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 
-.w-30{
-    width: 30%;
-}
 .player-console{
     display: flex;
     flex-direction: column;
@@ -251,20 +276,34 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+.console-play .bar{
+    width: 100px;
+
+}
 
 .player-volume{
     justify-content: space-around;
     align-items: center;   
 }
+.player-preview{
+    align-items: center;   
+}
 .bar{
     height: 5px;
-    width: 90px;
+    width: 80px;
     background-color: lightgray;
     border-radius: 10px;
     
 }
 
+#img-footer img{
+    height: 30px;
+    width: 30px;
+}
 
+.footer-img-description{
+    margin-left: 5px;
+}
 
 /* ********media query****** */
 
