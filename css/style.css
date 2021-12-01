@@ -138,8 +138,11 @@ a{
     list-style: none;
 }
 .sidebar-menu ul li{
-    
+    color: white;
     margin-top: 5px;
+}
+.sidebar-menu li a{
+    color: darkgray;
 }
 .sidebar-menu .circle{
     border-radius: 50%;
@@ -156,7 +159,12 @@ a{
     width: 20px;
 }
 
-
+.sidebar-top li, .sidebar-top img{
+    vertical-align: middle;
+}
+.sidebar-top img{
+    margin-right: 5px;
+}
 
 /*  main  */
 /* main structure */
@@ -170,11 +178,11 @@ main{
 /* header structure */
 .header-main{
     height: 80px;
-    width: calc(100% - 60px);
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     flex-shrink: 0;
     top: 0;
+    right: 0;
     left: 50px;
     display: flex;
     justify-content: flex-end;
@@ -184,7 +192,7 @@ main{
 
 .btn-header{
     color: white;
-    margin-right: 10px;
+    margin-right: 40px;
     border: 2px solid white;
     padding: 10px 30px;
     border-radius: 25px;
@@ -342,9 +350,12 @@ footer{
         display: inline-block;
     }
     .sidebar{
-        max-width: 560px;
+        min-width: 150px;
         flex-wrap: nowrap;
         
+    }
+    .header-main {
+        left: 150px;
     }
 
 
