@@ -102,7 +102,7 @@ a{
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 80px;
+    min-width: 50px;
     background-color: #000000;
     border: 1px solid black;
     height: calc(100vh - 80px);
@@ -166,11 +166,6 @@ main{
    background-color: rgba(20,25,34,255);
    padding-top: 100px
 }
-.main-content{
-    flex-grow: 1;
-    height: 100%;
-    overflow-y: auto;
-}
 
 /* header structure */
 .header-main{
@@ -180,7 +175,7 @@ main{
     position: fixed;
     flex-shrink: 0;
     top: 0;
-    left: 60px;
+    left: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -200,8 +195,16 @@ main{
 .main-content{
     flex-direction: column;
     display: flex;
-    margin: 0 15px 0 15px;
+    margin: 0 auto;
+    width: 90%;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 100%;
 }
+.main-content{
+    overflow-y: auto;
+}
+
 
 .nav-options{
     width: 450px;
@@ -227,6 +230,10 @@ main{
     margin-bottom: 30px;
 }
 
+/* cards */
+.card{
+    margin-bottom: 30px;
+}
 .main-content h1{
     font-size: 22px;
     color: white;
@@ -239,6 +246,29 @@ main{
     background-color: rosybrown;
     border: seagreen 2px solid;
     margin-bottom: 20px;
+}
+
+.card-box{
+    DISPLAY: FLEX;
+    FLEX-DIRECTION: column;
+    ALIGN-ITEMS: center;
+    margin-bottom: 30px;
+    max-width: 220px;
+}
+.card-box .song-img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+.card-box img{
+    width: 220px;
+    height: 220px;
+}
+.song-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px
 }
 
 
