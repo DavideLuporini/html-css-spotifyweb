@@ -15,12 +15,9 @@
 /* utilities */
 
 
-.full-p-container{
-    height: calc(100vh - 80px);
-}
 
 main{
-    display: flex;
+    
 }
 
 .icon{
@@ -57,15 +54,21 @@ a{
 .bgc-gray{
     background-color: gray;
 }
+
+
+/* Structure */
 /* sidebar structure */
 
+.full-p-container{
+    height: calc(100vh - 80px);
+    display: flex;
+}
 .sidebar{
     display: flex;
     flex-direction: column;
     width: 10%;
     background-color: #000000;
     border: 1px solid black;
-    order: -1;
     height: calc(100vh - 80px);
 }
 
@@ -83,7 +86,7 @@ a{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
+    
 }
 
 /** imgs & logos **/
@@ -111,8 +114,8 @@ a{
     margin-top: 5px;
 }
 .circle{
- border-radius: 50%;
- padding: 2px 5px;
+    border-radius: 50%;
+    padding: 2px 5px;
 }
 
 .circle .icons-sidebar{
@@ -124,31 +127,29 @@ a{
 /*  main  */
 /* main structure */
 
-.main-section{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(20,25,34,255);
-    width: 90%;
+main{
+   flex-grow: 1;
+    padding-top: 80px;
 }
 .main-content{
-
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(20,25,34,255);
 }
 
 /* header structure */
 .header-main{
-    flex-basis: 80px;
+    height: 80px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    flex-shrink: 0;
 }
 
 
 .btn-header{
     color: white;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+
     border: 2px solid white;
     padding: 10px 30px;
     border-radius: 25px;
@@ -159,8 +160,6 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
-    margin: 20px auto;
 }
 
 .nav-options{
@@ -208,8 +207,8 @@ a{
 }
 
 .footer-player{
-    height: 80px;
+    flex-basis: 80px;
+    flex-shrink: 0;
     align-content: flex-end;
-    height: 80px;
     background-color: yellow;
 }
