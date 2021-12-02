@@ -33,6 +33,7 @@ a{
     border: 2px solid white;
     padding: 4px 6px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* flex proprieties */
@@ -152,6 +153,7 @@ a{
     width: 20px;
     border: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 .circle .icons-sidebar{
@@ -312,14 +314,21 @@ footer{
     justify-content: space-evenly;
     
 }
-
+.row-up{
+    align-self: center;
+}
+.row-up i{
+    margin-right: 10px;
+}
 .console-play{
     justify-content: space-around;
     align-items: center;
 }
 .console-play .bar{
-    width: 100px;
-
+    width: 50%;
+}
+.console-play .progress-bar{
+    width: 30%;
 }
 
 .player-volume{
@@ -332,13 +341,13 @@ footer{
 .bar{
     height: 5px;
     width: 80px;
-    background-color: lightgray;
+    background-color: rgb(80, 79, 79);
     border-radius: 10px;   
 }
-.progress-bar{
+.bar .progress-bar{
+    background-color: lightgray;
     height: 5px;
     width: 30px;
-    background-color: rgb(80, 79, 79);
     border-radius: 10px;   
 }
 
