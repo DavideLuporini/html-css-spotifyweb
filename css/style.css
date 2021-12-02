@@ -16,6 +16,10 @@ img{
     max-width: 100%;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* utilities */
 
 
@@ -53,8 +57,8 @@ margin-left: 15px
     margin-bottom: 20px;
 }
 
-.f-size-40{
-    font-size: 40px;
+.f-size-30{
+    font-size: 30px;
 }
 
 /* flex proprieties */
@@ -79,7 +83,7 @@ margin-left: 15px
 }
 
 .icons-sidebar{
-    height: 40px;
+    height: 25px;
     width: auto;
 }
 
@@ -139,9 +143,15 @@ margin-left: 15px
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 10px;
     height: 85%;
-    align-items: center
+    align-items: flex-start;
+    font-size: 10px;
+}
+
+.playlist h3{
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 /** imgs & logos **/
@@ -152,10 +162,6 @@ margin-left: 15px
     margin-bottom: 20px;
 }
 
-.icon-sidebar{
-    font-size: 20px;
-    color: white;
-}
 
 .sidebar-menu .icon{
     font-size: 24px;
@@ -304,6 +310,7 @@ main{
 .suggestion h3{
     font-size: 24px;
     margin-bottom: 20px;
+    margin-left: 15px
 }
 .suggestion .card-box{
     margin: 0px 30px 20px 0px;
@@ -312,9 +319,12 @@ main{
     border-radius: 50%;
     overflow: hidden;
 }
-
 .playlist i{
     vertical-align: middle;
+    margin-right: 10px;
+}
+.playlist li{
+    margin-bottom: 10px;
 }
 /* footer */
 footer{
@@ -370,7 +380,8 @@ footer{
     align-items: center;   
 }
 .player-preview{
-    align-items: center;   
+    align-items: center;
+    margin-left: 10px;   
 }
 .bar{
     height: 5px;
