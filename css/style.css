@@ -125,7 +125,9 @@ margin-left: 15px
 .f-w-bold{
     font-weight: bold;
 }
-
+.d-inline{
+    display: inline-block;
+}
 /* Structure */
 /* sidebar structure */
 

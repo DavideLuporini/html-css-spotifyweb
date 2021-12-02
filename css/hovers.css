@@ -97,3 +97,20 @@ main > nav  ul > li:hover{
     top: -1px;
 }
 
+.console-play > div i:hover{
+    filter: brightness(1);
+    transform: scale(1.3);
+}
+
+.console-play > div.circle:hover{
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+
+/* left player */
+
+.player-volume > div i:hover{
+    filter: brightness(1);
+    transform: scale(1.3);
+}
