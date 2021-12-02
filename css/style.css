@@ -31,10 +31,10 @@ a{
     height: 25px;
     width: 25px;
     border: 2px solid white;
-    padding: 4px 6px;
     border-radius: 50%;
-    margin-right: 10px;
+
 }
+
 
 /* flex proprieties */
 .d-flex{
@@ -151,9 +151,6 @@ a{
     display: inline-block;
     height: 20px;
     width: 20px;
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
 }
 
 .circle .icons-sidebar{
@@ -280,7 +277,21 @@ main{
     color: white;
     margin-bottom: 5px
 }
-
+.feed,.popular-artists{
+    display: flex;
+    justify-content: flex-start;
+}
+.suggestion h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.suggestion .card-box{
+    margin: 0px 30px 20px 0px;
+}
+.popular-artists .card-box .song-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* footer */
 footer{
@@ -358,6 +369,14 @@ footer{
 
 .footer-img-description{
     margin-left: 5px;
+}
+footer .circle {
+    height: 25px;
+    width: 25px;
+    border: 2px solid white;
+    padding: 4px 6px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* ********media query****** */
