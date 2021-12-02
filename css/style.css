@@ -278,6 +278,7 @@ main{
     text-transform: uppercase;
     color: gray;
     margin-bottom: 30px;
+    border-bottom: 2px solid transparent;
 }
 
 /* cards */
