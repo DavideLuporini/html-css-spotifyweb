@@ -41,7 +41,21 @@ margin-left: 15px
     border-radius: 50%;
 
 }
+.circle-big{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.height-50{
+    height: 50px;
+}
 
+.m-b-20px{
+    margin-bottom: 20px;
+}
+
+.f-size-40{
+    font-size: 40px;
+}
 
 /* flex proprieties */
 .d-flex{
@@ -65,7 +79,7 @@ margin-left: 15px
 }
 
 .icons-sidebar{
-    height: 24px;
+    height: 40px;
     width: auto;
 }
 
@@ -75,6 +89,12 @@ margin-left: 15px
 }
 .w-25{
     width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+.m-w-200{
+    max-width: 200px;
 }
 
 /* bgc */
@@ -179,6 +199,7 @@ main{
    flex-grow: 1;
    background-color: rgba(20,25,34,255);
    padding-top: 100px;
+   padding-bottom: 100px;
     width: calc(100% - 50px);
     overflow: auto;
 }
@@ -292,6 +313,9 @@ main{
     overflow: hidden;
 }
 
+.playlist i{
+    vertical-align: middle;
+}
 /* footer */
 footer{
     font-size: 20px;
@@ -380,6 +404,8 @@ footer .circle {
 
 /* ********media query****** */
 
+/* screen xs---->s */
+
 @media screen and (min-width: 576px){
     .d-none{
         display: inline-block;
@@ -388,31 +414,30 @@ footer .circle {
         display: none;
     }
     .sidebar{
-        min-width: 150px;
+        min-width: 200px;
         flex-wrap: nowrap;
         
     }
     .header-main {
-        left: 150px;
+        left: 200px;
     }
-
-
-
 }
 
+/* screen s---->m */
 
 @media screen and (min-width: 768px){
     .card-box{
         flex-basis: 25%;
     }
-
 }
+
+
+/* screen m---->l */
 
 @media screen and (min-width: 992px){
     .card-box{
         flex-basis: calc(100% / 6 );
     }
-
 }
 
 
