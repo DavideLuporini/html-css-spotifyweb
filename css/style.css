@@ -190,6 +190,9 @@ margin-left: 15px
     height: 20px;
     width: 20px;
 }
+.fa-arrow-alt-circle-down{
+    margin-right: 10px;
+}
 
 .sidebar-top li, .sidebar-top img{
     vertical-align: middle;
@@ -296,6 +299,9 @@ main{
 }
 .card-box .song-img{
     margin-bottom: 10px;
+}
+.song-img{
+    position: relative;
 }
 .song-title{
     font-size: 18px;
@@ -452,3 +458,24 @@ footer .circle {
 }
 
 
+/* hover */
+
+.fa-play-circle{
+    position: absolute;
+    font-size: 70px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    color: white;
+} 
+ .card-box:hover .fa-play-circle{
+    opacity: 1;
+}
+
+.song-img{
+    filter: opacity(1);
+}
+.song-img:hover{
+    filter: opacity(0.5);
+}

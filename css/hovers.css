@@ -1,0 +1,59 @@
+/* hover */
+
+/* play button on cards */
+
+.fa-play-circle{
+    position: absolute;
+    font-size: 70px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    color: white;
+} 
+ .card-box:hover .fa-play-circle{
+    opacity: 1;
+}
+
+.song-img{
+    filter: opacity(1);
+}
+.song-img:hover{
+    filter: opacity(0.5);
+}
+
+
+/* header btn */
+
+a.btn-header:hover{
+    transform: scale(1.1);
+}
+
+
+/* hover effects sidebar */
+
+.sidbar-top li a:hover{
+    color: white;
+}
+
+.sidebar-top  li > a:hover{
+    color: white;
+}
+
+.sidebar-top  ul > li > span:hover{
+    color: white;
+}
+.sidebar-bot  ul > li > span:hover{
+    color: white;
+}
+
+
+.sidebar-bot  ul > li> a:hover{
+    color: white;
+}
+
+
+main > nav  ul > li:hover{
+    color: white;
+    border-bottom: 2px green solid;
+}
