@@ -113,7 +113,6 @@ margin-left: 15px
     min-width: 50px;
     background-color: #000000;
     border: 1px solid black;
-    height: 90%;
 }
 
 .sidebar-menu{
@@ -121,7 +120,7 @@ margin-left: 15px
     display: flex;
     justify-content: space-between;
     margin: 10px 0px 10px 0px;
-    height: 95%;
+    height: 85%;
     align-items: center
 }
 
@@ -180,7 +179,6 @@ main{
    flex-grow: 1;
    background-color: rgba(20,25,34,255);
    padding-top: 100px;
-   height: 90%;
     width: calc(100% - 50px);
     overflow: auto;
 }
@@ -259,16 +257,14 @@ main{
 }
 
 .card-container{
-    flex-basis: 49%;
-    background-color: rosybrown;
-    border: seagreen 2px solid;
+    flex-basis: 50%;
     margin-bottom: 20px;
 }
 
 .card-box{
     text-align: center;
     flex-basis: 50% ;
-    margin-bottom: 10p;
+    margin-bottom: 10px;
     padding: 10px 15px;
 }
 .card-box .song-img{
@@ -310,7 +306,6 @@ footer{
 .card{
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -389,6 +384,9 @@ footer .circle {
     .d-none{
         display: inline-block;
     }
+    .d-slm-none{
+        display: none;
+    }
     .sidebar{
         min-width: 150px;
         flex-wrap: nowrap;
@@ -399,19 +397,22 @@ footer .circle {
     }
 
 
+
 }
+
+
 @media screen and (min-width: 768px){
-    .d-none{
-        display: inline-block;
+    .card-box{
+        flex-basis: 25%;
     }
-    .sidebar{
-        min-width: 150px;
-        flex-wrap: nowrap;
-        
-    }
-    .header-main {
-        left: 150px;
-    }
-
 
 }
+
+@media screen and (min-width: 992px){
+    .card-box{
+        flex-basis: calc(100% / 6 );
+    }
+
+}
+
+
