@@ -97,7 +97,7 @@ a{
 /* sidebar structure */
 
 .full-p-container{
-    height: calc(100vh - 80px);
+    height: 100vh;
     display: flex;
 }
 .sidebar{
@@ -106,7 +106,7 @@ a{
     min-width: 50px;
     background-color: #000000;
     border: 1px solid black;
-    height: calc(100vh - 80px);
+    height: 90%;
 }
 
 .sidebar-menu{
@@ -171,7 +171,10 @@ a{
 main{
    flex-grow: 1;
    background-color: rgba(20,25,34,255);
-   padding-top: 100px
+   padding-top: 100px;
+   height: 90%;
+    width: calc(100% - 50px);
+    overflow: auto;
 }
 
 /* header structure */
@@ -301,6 +304,8 @@ footer{
     position: fixed;
     right: 0;
     left: 0;
+    bottom: 0;
+    height: 10%;
 }
 .card{
     display: inline-flex;
@@ -310,7 +315,6 @@ footer{
 }
 
 .footer-player{
-    height: 80px;
     flex-shrink: 0;
     align-content: flex-end;
     background-color: rgba(40,40,40,255);
