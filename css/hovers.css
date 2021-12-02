@@ -57,3 +57,43 @@ main > nav  ul > li:hover{
     color: white;
     border-bottom: 2px green solid;
 }
+
+
+/* footer */
+
+/* left player */
+.player-preview > .footer-img-description > div:hover{
+    color: white;
+}
+
+
+.footer-img-favourite i:hover{
+    color: white;
+}
+
+
+
+/* central player */
+.console-play > .bar .progress-bar:hover{
+    background-color: rgb(10, 228, 10);
+    filter: brightness(1);
+}
+.console-play > .bar .progress-bar:hover i.fa-circle{
+    opacity: 1;
+    color: rgb(10, 228, 10);
+    position: absolute;
+    right: 0px;
+    top: -1px;
+}
+.player-volume > .bar .progress-bar:hover{
+    background-color: rgb(10, 228, 10);
+    filter: brightness(1);
+}
+.player-volume > .bar .progress-bar:hover i.fa-circle{
+    opacity: 1;
+    color: rgb(10, 228, 10);
+    position: absolute;
+    right: 0px;
+    top: -1px;
+}
+

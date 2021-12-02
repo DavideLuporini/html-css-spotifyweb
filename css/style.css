@@ -225,6 +225,7 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 
 
@@ -252,7 +253,7 @@ main{
 
 
 .nav-options{
-    width: 450px;
+    flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -315,11 +316,20 @@ main{
 }
 .suggestion h3{
     font-size: 24px;
+    margin-bottom: 5px;
+    margin-left: 15px
+}
+.suggestion h5{
+    font-size: 12px;
     margin-bottom: 20px;
     margin-left: 15px
 }
 .suggestion .card-box{
     margin: 0px 30px 20px 0px;
+}
+.popular-artists .card-box .song-img{
+    border-radius: 50%;
+    overflow: hidden;
 }
 .popular-artists .card-box .song-img{
     border-radius: 50%;
@@ -357,6 +367,13 @@ footer{
     justify-content: space-around;
 }
 
+.footer-img-favourite{
+    display: flex;
+    align-self: center;
+    margin-left: 50px;
+    color: darkgray;
+}
+
 
 .player-console{
     display: flex;
@@ -377,9 +394,6 @@ footer{
 .console-play .bar{
     width: 50%;
 }
-.console-play .progress-bar{
-    width: 30%;
-}
 
 .player-volume{
     justify-content: space-around;
@@ -398,7 +412,7 @@ footer{
 .bar .progress-bar{
     background-color: lightgray;
     height: 5px;
-    width: 30px;
+    width: 30%;
     border-radius: 10px;   
 }
 
@@ -478,4 +492,8 @@ footer .circle {
 }
 .song-img:hover{
     filter: opacity(0.5);
+}
+
+.fa-circle{
+    opacity: 0;
 }
