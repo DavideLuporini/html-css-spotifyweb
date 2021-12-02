@@ -86,7 +86,9 @@ margin-left: 15px
     height: 25px;
     width: auto;
 }
-
+.sidebar-bot hr{
+    width: 170px;
+}
 /* width */
 .w-30{
     width: 30%;
