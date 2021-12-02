@@ -1,0 +1,64 @@
+/* ********media query****** */
+
+/* screen xs---->s */
+
+@media screen and (min-width: 576px){
+    .d-none{
+        display: inline-block;
+    }
+    .d-slm-none{
+        display: none;
+    }
+    .sidebar{
+        min-width: 200px;
+        flex-wrap: nowrap;
+        
+    }
+    .header-main {
+        left: 200px;
+    }
+}
+
+/* screen s---->m */
+
+@media screen and (min-width: 768px){
+    .card-box{
+        flex-basis: 25%;
+    }
+}
+
+
+/* screen m---->l */
+
+@media screen and (min-width: 992px){
+    .card-box{
+        flex-basis: calc(100% / 6 );
+    }
+}
+
+
+/* hover */
+
+.fa-play-circle{
+    position: absolute;
+    font-size: 70px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    color: white;
+} 
+ .card-box:hover .fa-play-circle{
+    opacity: 1;
+}
+
+.song-img{
+    filter: opacity(1);
+}
+.song-img:hover{
+    filter: opacity(0.5);
+}
+
+.fa-circle{
+    opacity: 0;
+}
