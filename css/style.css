@@ -285,6 +285,9 @@ footer{
     font-size: 20px;
     color: white;
     font-size: 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 .card{
     display: inline-flex;
@@ -330,8 +333,13 @@ footer{
     height: 5px;
     width: 80px;
     background-color: lightgray;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
+}
+.progress-bar{
+    height: 5px;
+    width: 30px;
+    background-color: rgb(80, 79, 79);
+    border-radius: 10px;   
 }
 
 #img-footer img{
@@ -346,6 +354,21 @@ footer{
 /* ********media query****** */
 
 @media screen and (min-width: 576px){
+    .d-none{
+        display: inline-block;
+    }
+    .sidebar{
+        min-width: 150px;
+        flex-wrap: nowrap;
+        
+    }
+    .header-main {
+        left: 150px;
+    }
+
+
+}
+@media screen and (min-width: 768px){
     .d-none{
         display: inline-block;
     }
